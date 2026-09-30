@@ -228,20 +228,6 @@ Model selection is driven by `--Net_Type` via `model_factory` in `models/model.p
 
 ---
 
-## 📈 Reproducing Paper Figures
-
-| Figure | Script / Source |
-|---|---|
-| Fig. 5–6 (violin, heatmap, avg accuracy, stability) | `result_analysis/visual_acc.py`, `result_analysis/box_line.py` |
-| Fig. 7–9 (ablation metrics, component matrix) | `result_analysis/accuarcy.py`, `comparisons/Multi_Comparison_Matrix/` |
-| Fig. 10–12 (long-sequence & parameter efficiency) | `result_analysis/compant.py`, `acc_params.py` |
-| Fig. 13 (t-SNE for CAWT) | `models/visual_tsne.py` |
-| Fig. 14–15 (attention heatmaps) | `models/visual.py` |
-| Fig. 16–17 (complexity scaling, runtime reduction) | `result_analysis/efficiency_visual.py` |
-| Critical difference diagrams | `comparisons/cd-diagram/` |
-
----
-
 ## 📖 Citation
 
 If you find this work useful, please cite:
