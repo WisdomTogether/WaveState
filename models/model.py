@@ -206,8 +206,8 @@ class WaveState(nn.Module):
 
         self.LayerNorm2 = nn.LayerNorm(c_in, eps=1e-5)
 
-        self.FeedForward = SparseFFN(c_in=c_in, sparsity=0.5, drop=dropout)
-        # self.FeedForward = FFN(c_in=c_in, drop=dropout)
+        # self.FeedForward = SparseFFN(c_in=c_in, sparsity=0.5, drop=dropout)
+        self.FeedForward = FFN(c_in=c_in, drop=dropout)
 
         self.gap = nn.AdaptiveAvgPool1d(1)
         self.flatten = nn.Flatten()
