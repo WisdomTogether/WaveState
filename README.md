@@ -99,7 +99,7 @@ $F = \alpha \cdot F_{time} + (1-\alpha) \cdot F_{freq}$ before entering PSSA.
 
 Inference-time reduction reaches up to **96.7%** on EigenWorms; empirical runtime scales **$O(T)$** (linear) versus $O(T^2)$ for Transformer baselines (see `figures/complexity_scaling.pdf`).
 
-### Ablation study (§4.3.1)
+### Ablation study
 
 | Config | CAWT | MS Conv | Attention | FFN | Accuracy | Params |
 |:-:|:-:|:-:|:-:|:-:|---|---|
@@ -113,7 +113,7 @@ Inference-time reduction reaches up to **96.7%** on EigenWorms; empirical runtim
 - CAWT×PSSA shows **synergy**: +6.0 pts with CAWT (A vs. C) vs. only +0.3 pts without CAWT (E vs. G).
 - More parameters ≠ better performance (B/F have the most params but underperform).
 
-### PSSA branch ablation (§4.3.3)
+### PSSA branch ablation
 
 | Dataset (length) | 1 branch | 2 branches | 4 branches |
 |---|---|---|---|
@@ -123,16 +123,7 @@ Inference-time reduction reaches up to **96.7%** on EigenWorms; empirical runtim
 
 Multi-branch design benefits long/complex sequences at near-constant inference time.
 
-### CAWT feature discriminability (t-SNE on imbalanced LSST, §4.4.1)
-
-
-
-| Metric | Original | CAWT | Δ |
-|---|---|---|---|
-| Intra-class compactness ↓ | 0.479 | **0.410** | −14.4% |
-| Inter-class mean distance ↑ | 0.282 | **0.486** | +72.3% |
-| Fisher score ↑ | 0.520 | **0.700** | +34.6% |
-| Separation index ↑ | 0.643 | **0.766** | +19.1% |
+### CAWT feature discriminability
 
 <div align="center">
 
