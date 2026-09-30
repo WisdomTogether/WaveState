@@ -134,19 +134,11 @@ Multi-branch design benefits long/complex sequences at near-constant inference t
 | Fisher score ↑ | 0.520 | **0.700** | +34.6% |
 | Separation index ↑ | 0.643 | **0.766** | +19.1% |
 
-**Original features** (inter-class minimum distance = 0.017):
-
 <div align="center">
 
-<img src="figures/visual_ori_tsne.png" width="600" alt="t-SNE of original features on LSST"/>
-
-</div>
-
-**CAWT features** (inter-class minimum distance improved to 0.045):
-
-<div align="center">
-
-<img src="figures/visual_dwt_tsne.png" width="600" alt="t-SNE of CAWT features on LSST"/>
+| Original features (min inter-class dist = 0.017) | CAWT features (min inter-class dist = 0.045) |
+|:---:|:---:|
+| <img src="figures/visual_ori_tsne.png" width="400" alt="t-SNE of original features on LSST"/> | <img src="figures/visual_dwt_tsne.png" width="400" alt="t-SNE of CAWT features on LSST"/> |
 
 </div>
 
