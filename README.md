@@ -27,7 +27,7 @@ Multivariate time series classification (MTSC) is crucial for handling complex d
 
 <div align="center">
 
-<img src="figures/WaveState.pdf" width="800" alt="WaveState Architecture"/>
+<img src="figures/WaveState.png" width="800" alt="WaveState Architecture"/>
 
 *Fig. 1 — (A) Class-adaptive wavelet transform; (B) Multi-scale convolution; (C) Parallel Selective State-space (PSSA) attention; (D) Sparse feedforward network.*
 
@@ -46,7 +46,7 @@ Multivariate time series classification (MTSC) is crucial for handling complex d
 
 <div align="center">
 
-<img src="figures/PSSA_Block(new).pdf" width="700" alt="PSSA Block"/>
+<img src="figures/PSSA_Block_new_.png" width="700" alt="PSSA Block"/>
 
 *Fig. 2 — (A) PSSA architecture with normalization and residual pathways; (B) parallel selective state-space block; (C) selective state-space block.*
 
@@ -125,14 +125,14 @@ Multi-branch design benefits long/complex sequences at near-constant inference t
 
 ### CAWT feature discriminability (t-SNE on imbalanced LSST, §4.4.1)
 
+
+
 | Metric | Original | CAWT | Δ |
 |---|---|---|---|
 | Intra-class compactness ↓ | 0.479 | **0.410** | −14.4% |
 | Inter-class mean distance ↑ | 0.282 | **0.486** | +72.3% |
 | Fisher score ↑ | 0.520 | **0.700** | +34.6% |
 | Separation index ↑ | 0.643 | **0.766** | +19.1% |
-
-Visual evidence: `figures/visual_ori_tsne.pdf` (original) vs. `figures/visual_dwt_tsne.pdf` (CAWT).
 
 ---
 
